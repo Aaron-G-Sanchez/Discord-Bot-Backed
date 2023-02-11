@@ -15,6 +15,8 @@ client.on('interactionCreate', async (interaction) => {
 
   if (interaction.commandName === 'ping') {
     await interaction.reply('pong!')
+  } else if (interaction.commandName === 'hello') {
+    await interaction.reply('world!')
   }
 })
 

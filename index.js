@@ -9,6 +9,10 @@ const commands = [
   {
     name: 'ping',
     description: 'Replies with pong!'
+  },
+  {
+    name: 'hello',
+    description: 'Replies with world!'
   }
 ]
 
