@@ -1,8 +1,3 @@
-// import { Client, Collection, Events, GatewayIntentBits } from 'discord.js'
-// import fs from 'node:fs'
-// import path from 'node:path'
-// import dotenv from 'dotenv'
-
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js')
 const fs = require('node:fs')
 const path = require('node:path')
