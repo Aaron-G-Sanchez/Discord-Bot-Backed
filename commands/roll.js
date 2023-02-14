@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('discord.js')
-// const wait = require('node:timers/promises').setTimeout
+const wait = require('node:timers/promises').setTimeout
 
 const dice = [1, 2, 3, 4, 5, 6]
 let rollResult = 0
@@ -15,8 +15,8 @@ module.exports = {
     .setDescription('Rolls a dice!'),
   async execute(interaction) {
     rollDice()
-    await interaction.reply(rollResult.toString())
-    // await wait(1000)
-    // await interaction.editReply(rollResult)
+    await interaction.reply('rolling')
+    await wait(2000)
+    await interaction.editReply(rollResult.toString())
   }
 }
