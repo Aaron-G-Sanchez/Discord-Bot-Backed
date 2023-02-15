@@ -1,11 +1,10 @@
 const { SlashCommandBuilder } = require('discord.js')
 const wait = require('node:timers/promises').setTimeout
 
-const dice = [1, 2, 3, 4, 5, 6]
 let rollResult = 0
 
 const rollDice = () => {
-  const roll = Math.floor(Math.random() * dice.length) + 1
+  const roll = Math.floor(Math.random() * 5) + 1
   rollResult = roll
 }
 
