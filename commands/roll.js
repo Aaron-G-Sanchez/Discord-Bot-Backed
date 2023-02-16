@@ -4,7 +4,7 @@ const wait = require('node:timers/promises').setTimeout
 let rollResult = 0
 
 const rollDice = () => {
-  const roll = Math.floor(Math.random() * 5) + 1
+  const roll = Math.floor(Math.random() * 6) + 1
   rollResult = roll
 }
 
